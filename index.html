@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta name="author" content="Carlos Andres Alzate" />
+        <meta
+            name="description"
+            content="casa hostal en las montañas a 45 minutos del mar caribe y 2 horas de la sierra nevada con lindos mirador, avistamiento de aves y hermosos atardeceres"
+        />
+        <meta
+            name="keywords"
+            content="hostel, hostal, montañas, caribe, hamacas, dormitorios, avistamiento de aves, habitacion, sierra nevada "
+        />
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+        <!-- fontawesomecons -->
+        <script src="https://kit.fontawesome.com/6a7144386f.js" crossorigin="anonymous"></script>
+        <!-- bootstrap css -->
+        <!-- CDN -->
+        <!-- <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        /> -->
+        <!-- mi Bootstrap lib/boostrap.min.css -->
+        <!-- <link rel="stylesheet" href="lib/bootstrap.min.css" /> -->
+        <!-- -mis Estilos :P- -->
+        <!-- <link rel="stylesheet" href="css/style.css" /> -->
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Hostal La Casa - Inicio</title>
+    </head>
+
+    <body>
+        <!-- --- -->
+        <!-- INICIO - Barra de navegacion -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-gradient-dark sticky-top align-items-baseline">
+            <a href="index.html" class="navbar-brand">
+                <img
+                    width="50"
+                    height="50"
+                    src="img/logo_small.svg"
+                    alt="logo de la pagina"
+                    loading="lazy"
+                    class="d-inline-block align-bottom logo"
+                />
+                <span>Hostal La Casa</span>
+            </a>
+            <button
+                class="navbar-toggler justify-content-end"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarContenido"
+                aria-expanded="false"
+                aria-label="toggle navigation"
+            >
+                <span class="navbar-toggler-icon justify-content-end"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarContenido">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hospedaje.html" class="nav-link">HOSPEDAJE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="actividades.html" class="nav-link">ACTIVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="voluntarios.html" class="nav-link">VOLUNTARIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">CONTACTO</a>
+                    </li>
+                    <li id="idioma" class="nav-item">
+                        <ul class="navbar-nav nav-item">
+                            <li class="nav-item">
+                                <a href="" class="nav-link disabled"><s>es</s></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link disabled"><s>en</s></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIN - Barra de navegacion -->
+        <!-- --- -->
+        <!-- INICIO - Header -->
+        <header class="mainHeader overflow-hidden bg-light">
+            <div class="position-relative container-fluid">
+                <div
+                    class="position-absolute jumbotron mainHeader__card bg-transparent mainHeader__card d-none d-sm-block"
+                >
+                    <h1 class="text-light">Hostal En Las Montañas</h1>
+                    <p class="lead text-light">
+                        Duerme bajo las estrellas, Sueña con la libertad
+                    </p>
+                    <button
+                        type="button"
+                        value="reserva"
+                        class="btn btn-primary btn-lg"
+                        data-toggle="modal"
+                        data-target="#modalReserva"
+                    >
+                        reserva
+                    </button>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/WBxQu_c-bDs"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="embed-responsive-item mainHeader__card_video"
+                    >
+                        <p>Su navegador no soporta iframes</p>
+                    </iframe>
+                </div>
+            </div>
+            <!-- --- -->
+            <!-- inicio - formulario de reserva header -->
+            <div class="mainHeader__footer container-fluid d-flex justify-content-center bg-light">
+                <form id="formulario__mainHeader" class="row">
+                    <div class="col-auto py-4">
+                        <label for="checkIn" class="form-inline">
+                            <span class="pr-2">Fecha de entrada:</span>
+                            <input type="date" name="checkIn" id="checkIn" class="form-control" />
+                        </label>
+                    </div>
+                    <div class="col-auto py-4">
+                        <label for="checkOut" class="form-inline">
+                            <span class="pr-2">Fecha de salida:</span>
+                            <input type="date" name="checkOut" id="checkOut" class="form-control" />
+                        </label>
+                    </div>
+                    <div class="col-auto py-4">
+                        <label for="diponible" class="form-inline">
+                            <span class="pr-2">Disponibilidad:</span>
+                            <select name="disponible" id="disponible" class="form-control" type="button">
+                                <option value="disponible">En estas fechas</option>
+                                <option value="Cabaña">Cabaña</option>
+                                <option value="Hamaca">Hamaca</option>
+                                <option value="Dormitorio">Dormitorio</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-inline py-4">
+                        <button
+                            type="button"
+                            value="reserva"
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#modalReserva"
+                        >
+                            Reserva
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- fin - formulario de reserva header -->
+        </header>
+        <!-- FIN - Header -->
+        <!-- --- -->
+        <!-- INICIO - seccion serviciosMuestra -->
+        <section id="serviciosMuestra" class="seccionMuestra overflow-hidden">
+            <div class="container px-0 py-5">
+                <div class="row seccionMuestra__top">
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center">
+                        <div class="seccionMuestra__description">
+                            <div class="">
+                                <h2>Exepteur sint occaeuiecat cupidatat.</h2>
+                                <p class="small">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus hic
+                                    mollitia soluta in commodi quasi. Corrupti sequi, nesciunt molestiae delectus
+                                    asperiores laudantium tempora sunt pariatur aliquam natus earum, praesentium
+                                    perspiciatis aliquid? Eum nam iste quasi quis consequuntur. Ex dolorem illum
+                                    accusamus accusantium voluptas quas tempora ab, voluptatum libero placeat
+                                    distinctio.
+                                </p>
+                            </div>
+                            <div class="description__footer d-flex justify-content-between">
+                                <p>
+                                    <strong>Lorem ipsum dolor sit amet.</strong>
+                                </p>
+                                <a href="#actividades.html"><i class="fas fa-info-circle"></i> actividades</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="descriptionImg_dos"
+                        class="seccionMuestra__imgDos col-md-12 col-lg-6 d-flex justify-content-center"
+                    >
+                        <!-- <img src="img/Photo.png" alt="imagen del sitio" /> -->
+                        <img
+                            src="https://images.unsplash.com/photo-1508913950751-d1d139a29e68?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                            alt="imagen del sitio"
+                        />
+                    </div>
+                </div>
+                <div class="row pt-sm-4 pt-md-0 seccionMuestra__bottom">
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center">
+                        <div id="descriptionImg_uno" class="seccionMuestra__imgUno">
+                            <img
+                                src="https://images.unsplash.com/photo-1521208728055-d69f6d428ccb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                                alt="imagen del sitio y servicios"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex justify-content-center">
+                        <div
+                            class="seccionMuestra__card bg-gradient-primary d-flex justify-content-center align-items-baseline"
+                        >
+                            <img src="img/avatar.png" alt="..." class="pl-5 pt-5 pr-3" />
+                            <div class="media-body text-light">
+                                <h4 class="">Mirador</h4>
+                                <p class="w-75">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad saepe vel
+                                    enim cupiditate earum quos ipsam. Minima
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN - seccion serviciosMuestra -->
+        <!-- --- -->
+        <!-- INICIO - seccion hospedaje -->
+        <section id="hospedaje" class="mainHospedaje bg-light overflow-hidden">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-between">
+                        <article class="mainHospedaje__description d-flex flex-column justify-content-between">
+                            <h2>Exepteur</h2>
+                            <p>
+                                Lorem ipsum dolor sit. Velit expedita quis itaque. Iste commodi repellendus molestiae.
+                                Facilis porro ipsam explicabo. Unde sint quae ducimus.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit. Velit expedita quis itaque. Iste commodi repellendus molestiae.
+                                Facilis porro ipsam explicabo. Unde sint quae ducimus.
+                            </p>
+                        </article>
+                        <div class="miniatura my-sm-3 my-md-0 row">
+                            <div class="col-sm-6 col-md-4 p-1">
+                                <span></span>
+                                <img
+                                    src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=8"
+                                    alt="miniaturas del sitio"
+                                    class="img-thumbnail"
+                                />
+                            </div>
+                            <div class="col-sm-6 col-md-4 p-1">
+                                <span></span>
+                                <img
+                                    src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=8"
+                                    alt="miniaturas del sitio"
+                                    class="img-thumbnail"
+                                />
+                            </div>
+                            <div class="col-sm-6 col-md-4 p-1">
+                                <span></span>
+                                <img
+                                    src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=8"
+                                    alt="miniaturas del sitio"
+                                    class="img-thumbnail"
+                                />
+                            </div>
+                            <div class="col-sm-6 col-md-4 p-1">
+                                <span></span>
+                                <img
+                                    src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=8"
+                                    alt="miniaturas del sitio"
+                                    class="img-thumbnail"
+                                />
+                            </div>
+                            <div class="col-sm-6 col-md-4 p-1">
+                                <span></span>
+                                <img
+                                    src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=8"
+                                    alt="miniaturas del sitio"
+                                    class="img-thumbnail"
+                                />
+                            </div>
+                            <div class="col-sm-6 col-md-4 p-1">
+                                <span></span>
+                                <img
+                                    src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=8"
+                                    alt="miniaturas del sitio"
+                                    class="img-thumbnail"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vistaCompleta col-md-12 col-lg-6 d-flex justify-content-center">
+                        <div class="carousel carousel-fade" id="mycarousel" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active vistaCompleta__img">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1551927411-95e412943b58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
+                                        alt="imagen de la habitacion principal"
+                                    />
+                                </div>
+                                <div class="carousel-item vistaCompleta__img">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1575067628707-cbfb377f8fbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
+                                        alt="imagen del living"
+                                    />
+                                </div>
+                                <div class="carousel-item vistaCompleta__img">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
+                                        alt="imagen de los dormitorios"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN - seccion hospedaje -->
+        <!-- --- -->
+        <!-- INICIO - seccion precios -->
+        <section id="tablePrecios" class="mainPrecios">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center py-3">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
+                            Corrupti repellendus cumque quasi.
+                        </p>
+                    </div>
+                    <!-- contenedor de tablas con precios -->
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-center">
+                            <!-- tabla Hamacas -->
+                            <table class="tabla__table col-md-3 table table-bordered">
+                                <thead class="tabla__thead">
+                                    <tr>
+                                        <th colspan="2" scope="col" class="py-4">
+                                            <h4 class="text-center">
+                                                contenido
+                                            </h4>
+                                            <p class="text-center">
+                                                <span>$</span>
+                                                <span>200</span>
+                                                <span>/noche</span>
+                                            </p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tabla__tbody text-center">
+                                    <tr>
+                                        <th scope="row">desayuno</th>
+                                        <td>free</td>
+                                    </tr>
+                                    <tr>
+                                        <th>almuerzo</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>cena</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>tv</th>
+                                        <td>casillero</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="tabla__tfoot text-center">
+                                    <tr>
+                                        <th colspan="2" class="py-3">
+                                            <button
+                                                type="button"
+                                                value="reserva"
+                                                class="btn btn-primary"
+                                                data-toggle="modal"
+                                                data-target="#modalReserva"
+                                            >
+                                                reserva
+                                            </button>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!-- tabla dormitorio -->
+                            <table class="tabla__table col-md-3 table table-bordered">
+                                <thead class="tabla__thead">
+                                    <tr>
+                                        <th colspan="2" scope="col" class="py-4">
+                                            <h4 class="text-center">
+                                                contenido
+                                            </h4>
+                                            <p class="text-center">
+                                                <span>$</span>
+                                                <span>200</span>
+                                                <span>/noche</span>
+                                            </p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tabla__tbody text-center">
+                                    <tr>
+                                        <th scope="row">desayuno</th>
+                                        <td>free</td>
+                                    </tr>
+                                    <tr>
+                                        <th>almuerzo</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>cena</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>tv</th>
+                                        <td>casillero</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="tabla__tfoot text-center">
+                                    <tr>
+                                        <th colspan="2" class="py-3">
+                                            <button
+                                                type="button"
+                                                value="reserva"
+                                                class="btn btn-primary"
+                                                data-toggle="modal"
+                                                data-target="#modalReserva"
+                                            >
+                                                reserva
+                                            </button>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!-- tabla cabaña -->
+                            <table class="tabla__table col-md-3 table table-bordered">
+                                <thead class="tabla__thead">
+                                    <tr>
+                                        <th colspan="2" scope="col" class="py-4">
+                                            <h4 class="text-center">
+                                                contenido
+                                            </h4>
+                                            <p class="text-center">
+                                                <span>$</span>
+                                                <span>200</span>
+                                                <span>/noche</span>
+                                            </p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tabla__tbody text-center">
+                                    <tr>
+                                        <th scope="row">desayuno</th>
+                                        <td>free</td>
+                                    </tr>
+                                    <tr>
+                                        <th>almuerzo</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>cena</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>tv</th>
+                                        <td>casillero</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="tabla__tfoot text-center">
+                                    <tr>
+                                        <th colspan="2" class="py-3">
+                                            <button
+                                                type="button"
+                                                value="reserva"
+                                                class="btn btn-primary"
+                                                data-toggle="modal"
+                                                data-target="#modalReserva"
+                                            >
+                                                reserva
+                                            </button>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!-- tabla habitacion -->
+                            <table class="tabla__table col-md-3 table table-bordered">
+                                <thead class="tabla__thead">
+                                    <tr>
+                                        <th colspan="2" scope="col" class="py-4">
+                                            <h4 class="text-center">
+                                                contenido
+                                            </h4>
+                                            <p class="text-center">
+                                                <span>$</span>
+                                                <span>200</span>
+                                                <span>/noche</span>
+                                            </p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tabla__tbody text-center">
+                                    <tr>
+                                        <th scope="row">desayuno</th>
+                                        <td>free</td>
+                                    </tr>
+                                    <tr>
+                                        <th>almuerzo</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>cena</th>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>tv</th>
+                                        <td>casillero</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="tabla__tfoot text-center">
+                                    <tr>
+                                        <th colspan="2" class="py-3">
+                                            <button
+                                                type="button"
+                                                value="reserva"
+                                                class="btn btn-primary"
+                                                data-toggle="modal"
+                                                data-target="#modalReserva"
+                                            >
+                                                reserva
+                                            </button>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text-center py-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia quibusdam
+                            aspernatur fuga expedita sunt atque, sint numquam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN - seccion precios -->
+        <!-- --- -->
+        <!-- INICIO - seccion ubicaion -->
+        <section id="ubicacion" class="mainUbicacion">
+            <picture class="py-5">
+                <source srcset="img/mapa_ubicacion.png" />
+                <img src="img/mapa_ubicacion.png" alt="ubicacion en el mapa" class="img-fluid w-100" />
+            </picture>
+        </section>
+        <!-- FIN - seccion ubicaion -->
+        <!-- --- -->
+        <!-- INICIO - footer -->
+        <footer id="mainFooter" class="mainFooter bg-light">
+            <div class="container py-5">
+                <div class="row align-items-start">
+                    <div class="col-md-3">
+                        <h5>Preguntas</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="contacto.html" class="btn btn-primary" role="button" aria-pressed="true">Contacto</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>recepcion</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            <span class="fas fa-phone-square-alt text-primary mr-2 icon--size-small"></span>+44 356 678
+                            903
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>voluntarios</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            <span class="far fa-envelope text-primary mr-2 icon--size-small"></span>voluntario@mail.com
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><span class="fab fa-instagram icon icon--size-big"></span></a>
+                        <a href="#"><span class="fab fa-facebook-square icon icon--size-big"></span></a>
+                        <a href="#"><span class="fab fa-tripadvisor icon icon--size-big"></span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FIN - footer -->
+
+        <!-- INICIO - modales -->
+        <div class="modal fade" id="modalReserva" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Lugares Disponibles</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">trabajando en el contenido</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Cancelar
+                        </button>
+                        <!-- con esto deberia enviar a otra ventana o a un checkout -->
+                        <button type="button" class="btn btn-primary">
+                            Listo!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN - modales -->
+
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <!-- PoperJs -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- BootstrapJs -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <!-- mi script -->
+        <script src="script.js"></script>
+    </body>
+</html>

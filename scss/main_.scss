@@ -1,0 +1,243 @@
+// Colores
+$black: #202329;
+$dark: #40434a;
+$light: #efeeeb;
+$white: #fcfbf7;
+$primary: #1a8082;
+
+:root {
+    --primary: #{$primary};
+}
+
+// Tipografia
+$font-primary: "Lora", serif;
+$font-secondary: "Playfair Display", serif;
+
+// Font-size
+
+// interpolando para sobre escribir variables de bootstrap
+
+body {
+    font-family: $font-primary;
+}
+
+//agregando tipografia a los heading y tamaño
+$font-size-base: 16px;
+$heading-scale: 6;
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: $font-secondary;
+        font-size: $font-size-base + $heading-scale * (6 - $i);
+    }
+}
+
+a {
+    color: $primary;
+    &:hover {
+        @extend a;
+    }
+}
+
+// mixin background-color y boder-color
+@mixin bgc-bc {
+    background-color: lighten($primary, 5%);
+    border-color: lighten($primary, 5%);
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+        @include bgc-bc;
+    }
+    &.focus,
+    &:focus {
+        @include bgc-bc;
+        box-shadow: 0 0 0 0.2rem lighten($primary, 5%);
+    }
+}
+
+.btn {
+    &.focus,
+    &:focus {
+        @include bgc-bc;
+        box-shadow: 0 0 0 0.2rem lighten($primary, 5%);
+    }
+}
+
+// .btn-primary:not(:disabled):not(.disabled).active,
+// .btn-primary:not(.disabled):not(.disabled):active,
+// .show > .btn-primary.dropdown-toggle {
+//     @include bgc-bc;
+// }
+
+.mainHeader {
+    &__card {
+        bottom: 0;
+        height: 320px;
+        margin: auto;
+        top: 0;
+        width: 500px;
+        z-index: 2;
+    }
+    &__card_video {
+        filter: brightness(70%);
+    }
+}
+
+.seccionMuestra {
+    &__imgDos > img,
+    &__description {
+        height: 270px;
+        width: 494px;
+    }
+    &__imgUno > img,
+    &__card {
+        height: 340px;
+        width: 494px;
+    }
+}
+
+.mainUbicacion {
+    &__mapa {
+        width: 100%;
+    }
+}
+
+/* ********************* */
+/* seccion hospedaje
+Pagina hospedaje.html */
+/* ********************* */
+
+.vistaCompleta {
+    &__img img {
+        height: 600px;
+        width: 500px;
+    }
+}
+
+/* *********************** */
+/* Pagina actividades.html */
+/* *********************** */
+.tabla {
+    &__table {
+        width: calc(100% / 250px);
+        min-width: 250px;
+        max-width: 250px;
+        margin: 16px;
+    }
+}
+
+/* *********************** */
+/* Pagina voluntarios.html */
+/* *********************** */
+
+.enConstruccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    min-height: 300px;
+
+    div {
+        height: 267px;
+        position: relative;
+        top: 0px;
+        width: 400px;
+        p {
+            font-size: 8em;
+            position: absolute;
+            z-index: 3;
+            margin: 0;
+            color: rgba(32, 35, 41, 0.9);
+            font-weight: bold;
+        }
+    }
+
+    img {
+        box-shadow: 2px 3px 10px -2px #202329;
+        height: 267px;
+        opacity: 0.7;
+        transform-origin: top left;
+        transform: rotate(10deg);
+        width: 400px;
+    }
+}
+
+/* *********************** */
+/*         queries         */
+/* *********************** */
+// variables para mediaqueries
+$media-991: 991px;
+$media-767: 767px;
+$media-576: 576px;
+
+@mixin media_w_h {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: $media-991) {
+    .seccionMuestra {
+        &__top {
+            margin-bottom: 16px;
+        }
+    }
+
+    .enConstruccion {
+        div {
+            p {
+                font-size: 6em;
+            }
+        }
+    }
+}
+@media (max-width: $media-767) {
+    .enConstruccion {
+        div {
+            p {
+                font-size: 4em;
+            }
+        }
+    }
+}
+@media (max-width: $media-576) {
+    .seccionMuestra {
+        &__description,
+        &__imgDos > img,
+        &__imgUno > img,
+        &__card {
+            @include media_w_h;
+        }
+        &__description {
+            padding: 1em;
+        }
+    }
+    .mainHospedaje {
+        &__description {
+            @include media_w_h;
+            padding: 1em;
+        }
+    }
+    .vistaCompleta {
+        &__img {
+            img {
+                @include media_w_h;
+            }
+        }
+    }
+
+    .enConstruccion {
+        div {
+            p {
+                font-size: 3em;
+            }
+        }
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
