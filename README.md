@@ -47,3 +47,7 @@ npm run watch-css
   automatically restart your server._
 - [Sass](https://sass-lang.com/) - _Sass is the most mature, stable, and powerful professional grade CSS extension
   language in the world_
+
+## Autor 🎼
+
+- **Carlos Andrés Alzate**
