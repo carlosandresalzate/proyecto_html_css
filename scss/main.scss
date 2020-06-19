@@ -54,8 +54,7 @@ $border-collapse: collapse;
 @import "bootstrap.scss";
 
 // tablas
-.border-collaps {
-    border: none;
+table.border-collapse {
     border-collapse: $border-collapse !important;
 }
 
