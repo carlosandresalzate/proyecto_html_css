@@ -37,6 +37,9 @@ $secondary-font-family: "Playfair Display";
 $font-family-sans-serif: $primary-font-family, sans-serif;
 $font-family-base: $primary-font-family;
 
+// table
+$border-collapse: collapse;
+
 %heading {
     font-family: $secondary-font-family;
 }
@@ -46,8 +49,19 @@ $font-family-base: $primary-font-family;
         @extend %heading;
     }
 }
+
 // agregando bootstrap
 @import "bootstrap.scss";
+
+// tablas
+.border-collaps {
+    border: none;
+    border-collapse: $border-collapse !important;
+}
+
+// table {
+//     border-collapse: $border-collapse !important;
+// }
 
 /* *********************** */
 /*        animacion        */
@@ -213,8 +227,6 @@ Pagina hospedaje.html */
 /* *********************** */
 
 @mixin media_w_h($mWidth, $height) {
-    // max-width: 100%;
-    // height: auto;
     max-width: $mWidth;
     height: $height;
 }
