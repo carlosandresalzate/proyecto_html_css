@@ -1,234 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=7" />
-        <meta name="author" content="Carlos Andres Alzate" />
-        <!-- google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
-        <!-- fontawesomecons -->
-        <script src="https://kit.fontawesome.com/6a7144386f.js" crossorigin="anonymous"></script>
-        <!-- bootstrap css -->
-        <!-- <link
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=7" />
+		<meta name="author" content="Carlos Andres Alzate" />
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+		<!-- fontawesomecons -->
+		<script src="https://kit.fontawesome.com/6a7144386f.js" crossorigin="anonymous"></script>
+		<!-- bootstrap css -->
+		<!-- <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
             crossorigin="anonymous"
         /> -->
-        <!-- -mis Estilos :P- -->
-        <!-- <link rel="stylesheet" href="css/style.css" /> -->
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Contacto - Hostal La Casa</title>
-    </head>
+		<!-- -mis Estilos :P- -->
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Contacto - Hostal La Casa</title>
+	</head>
 
-    <body>
-        <!-- --- -->
-        <!-- INICIO - Barra de navegacion -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-gradient-dark sticky-top align-items-baseline">
-            <a href="index.html" class="navbar-brand">
-                <img
-                    width="50"
-                    height="50"
-                    src="img/logo_small.svg"
-                    alt="logo de la pagina"
-                    loading="lazy"
-                    class="d-inline-block align-bottom logo"
-                />
-                Hostal La Casa
-            </a>
-            <button
-                class="navbar-toggler justify-content-end"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarContenido"
-                aria-expanded="false"
-                aria-label="toggle navigation"
-            >
-                <span class="navbar-toggler-icon justify-content-end"></span>
-            </button>
+	<body>
+		<!-- --- -->
+		<!-- INICIO - Barra de navegacion -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-gradient-dark sticky-top align-items-baseline">
+			<a href="index.html" class="navbar-brand">
+				<img width="50" height="50" src="img/logo_small.svg" alt="logo de la pagina" loading="lazy" class="d-inline-block align-bottom logo" />
+				Hostal La Casa
+			</a>
+			<button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarContenido" aria-expanded="false" aria-label="toggle navigation">
+				<span class="navbar-toggler-icon justify-content-end"></span>
+			</button>
 
-            <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarContenido">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="hospedaje.html" class="nav-link">HOSPEDAJE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="actividades.html" class="nav-link">ACTIVIDADES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="voluntarios.html" class="nav-link">VOLUNTARIOS</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="contacto.html" class="nav-link">CONTACTO</a>
-                    </li>
-                    <li id="idioma" class="nav-item">
-                        <ul class="navbar-nav nav-item">
-                            <li class="nav-item">
-                                <a href="" class="nav-link disabled"><s>es</s></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link disabled"><s>en</s></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- FIN - Barra de navegacion -->
-        <!-- --- -->
-        <!-- INICIO form -->
-        <section id="contactForm" class="mainForm">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4 class="display-4">Lorem.</h4>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum minima dolorum,
-                            consequatur mollitia aliquam soluta nam esse praesentium sed, hic ducimus, eos voluptas
-                            accusantium.
-                        </p>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum minima dolorum,
-                            consequatur mollitia aliquam soluta nam esse praesentium sed, hic ducimus, eos voluptas
-                            accusantium.
-                        </p>
-                    </div>
-                    <form id="mainForm" class="col-md-6">
-                        <p>
-                            <strong>campos obligatorios</strong>
-                            <abbr title="required" class="text-danger">*</abbr>
-                        </p>
-                        <!-- - -->
-                        <div class="form-group">
-                            <label for="nombreApellido">
-                                <abbr title="required" class="text-danger">*</abbr>
-                                Nombre y Apellido:
-                            </label>
-                            <input
-                                type="text"
-                                name="nombreApellido"
-                                class="form-control"
-                                placeholder="nombre y apellido"
-                            />
-                        </div>
-                        <!-- - -->
-                        <div class="form-group">
-                            <label for="email">
-                                <abbr title="required" class="text-danger">*</abbr>
-                                Email:
-                            </label>
-                            <input type="email" name="email" class="form-control" placeholder="tuCorreo@mail.com" />
-                        </div>
-                        <!-- - -->
-                        <div class="d-flex justify-content-between align-items-center py-2">
-                            <div class="col">
-                                <div class="form-check">
-                                    <input type="radio" name="gender" value="hombre" class="form-check-input" />
-                                    <label for="hombre" class="form-check-label">Hombre</label>
-                                </div>
+			<div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarContenido">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">INICIO</a>
+					</li>
+					<li class="nav-item">
+						<a href="hospedaje.html" class="nav-link">HOSPEDAJE</a>
+					</li>
+					<li class="nav-item">
+						<a href="actividades.html" class="nav-link">ACTIVIDADES</a>
+					</li>
+					<li class="nav-item">
+						<a href="voluntarios.html" class="nav-link">VOLUNTARIOS</a>
+					</li>
+					<li class="nav-item active">
+						<a href="contacto.html" class="nav-link">CONTACTO</a>
+					</li>
+					<li id="idioma" class="nav-item">
+						<ul class="navbar-nav nav-item">
+							<li class="nav-item">
+								<a href="" class="nav-link disabled"><s>es</s></a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link disabled"><s>en</s></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- FIN - Barra de navegacion -->
+		<!-- --- -->
+		<!-- INICIO form -->
+		<section id="contactForm" class="mainForm">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-6">
+						<h4 class="display-4">Lorem.</h4>
+						<p class="lead">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum minima dolorum, consequatur mollitia aliquam soluta nam esse praesentium sed, hic ducimus, eos voluptas accusantium.
+						</p>
+						<p class="lead">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum minima dolorum, consequatur mollitia aliquam soluta nam esse praesentium sed, hic ducimus, eos voluptas accusantium.
+						</p>
+					</div>
+					<form id="mainForm" class="col-md-6">
+						<p>
+							<strong>campos obligatorios</strong>
+							<abbr title="required" class="text-danger">*</abbr>
+						</p>
+						<!-- - -->
+						<div class="form-group">
+							<label for="nombreApellido">
+								<abbr title="required" class="text-danger">*</abbr>
+								Nombre y Apellido:
+							</label>
+							<input type="text" name="nombreApellido" class="form-control" placeholder="nombre y apellido" />
+						</div>
+						<!-- - -->
+						<div class="form-group">
+							<label for="email">
+								<abbr title="required" class="text-danger">*</abbr>
+								Email:
+							</label>
+							<input type="email" name="email" class="form-control" placeholder="tuCorreo@mail.com" />
+						</div>
+						<!-- - -->
+						<div class="d-flex justify-content-between align-items-center py-2">
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="gender" value="hombre" class="form-check-input" />
+									<label for="hombre" class="form-check-label">Hombre</label>
+								</div>
 
-                                <div class="form-check">
-                                    <input type="radio" name="gender" value="mujer" class="form-check-input" />
-                                    <label for="mujer" class="form-check-label">Mujer</label>
-                                </div>
-                            </div>
-                            <!-- - -->
-                            <div class="col">
-                                <label for="asunto">Asunto</label>
-                                <select name="asunto" id="asunto" class="mr-sm-2 form-control">
-                                    <option value="uno" selected disabled>Asunto</option>
-                                    <option value="dos">opcion 1</option>
-                                    <option value="tres">opcion 2</option>
-                                    <option value="cuatro">opcion 3</option>
-                                    <option value="cinco">opcion 4</option>
-                                    <option value="seis">otro</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- - -->
-                        <div class="form-group py-2">
-                            <textarea
-                                name="mensaje"
-                                id="mensaje"
-                                class="form-control"
-                                rows="6"
-                                placeholder="Como podemos ayudarte"
-                            ></textarea>
-                        </div>
-                        <!-- - -->
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div class="form-check text-muted">
-                                <input type="checkbox" name="noticias" class="form-check-input" />
-                                <label for="noticias" class="form-check-label">recibir noticias</label>
-                            </div>
-                            <!-- - -->
-                            <div class="form-group">
-                                <input type="reset" value="Borrar" class="btn btn-secondary btn-lg" />
-                                <input type="submit" value="Enviar" class="btn btn-primary btn-lg" />
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- FIN form -->
-        <!-- --- -->
-        <!-- INICIO - footer -->
-        <footer id="mainFooter" class="mainFooter bg-light">
-            <div class="container py-5">
-                <div class="row align-items-start">
-                    <div class="col-md-3">
-                        <h5>Preguntas</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <button class="btn btn-primary">Contacto</button>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>recepcion</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>
-                            <span class="fas fa-phone-square-alt text-primary mr-2 icon--size-small"></span>+44 356 678
-                            903
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>voluntarios</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>
-                            <span class="far fa-envelope text-primary mr-2 icon--size-small"></span>voluntario@mail.com
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><span class="fab fa-instagram icon icon--size-big"></span></a>
-                        <a href="#"><span class="fab fa-facebook-square icon icon--size-big"></span></a>
-                        <a href="#"><span class="fab fa-tripadvisor icon icon--size-big"></span></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- FIN - footer -->
+								<div class="form-check">
+									<input type="radio" name="gender" value="mujer" class="form-check-input" />
+									<label for="mujer" class="form-check-label">Mujer</label>
+								</div>
+							</div>
+							<!-- - -->
+							<div class="col">
+								<label for="asunto">Asunto</label>
+								<select name="asunto" id="asunto" class="mr-sm-2 form-control">
+									<option value="uno" selected disabled>Asunto</option>
+									<option value="dos">opcion 1</option>
+									<option value="tres">opcion 2</option>
+									<option value="cuatro">opcion 3</option>
+									<option value="cinco">opcion 4</option>
+									<option value="seis">otro</option>
+								</select>
+							</div>
+						</div>
+						<!-- - -->
+						<div class="form-group py-2">
+							<textarea name="mensaje" id="mensaje" class="form-control" rows="6" placeholder="Como podemos ayudarte"></textarea>
+						</div>
+						<!-- - -->
+						<div class="d-flex justify-content-between align-items-start">
+							<div class="form-check text-muted">
+								<input type="checkbox" name="noticias" class="form-check-input" />
+								<label for="noticias" class="form-check-label">recibir noticias</label>
+							</div>
+							<!-- - -->
+							<div class="form-group">
+								<input type="reset" value="Borrar" class="btn btn-secondary btn-lg" />
+								<input type="submit" value="Enviar" class="btn btn-primary btn-lg" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- FIN form -->
+		<!-- --- -->
+		<!-- INICIO - footer -->
+		<footer id="mainFooter" class="mainFooter bg-light">
+			<div class="container py-5">
+				<div class="row align-items-start">
+					<div class="col-md-3">
+						<h5>Preguntas</h5>
+						<p>Lorem ipsum dolor sit amet.</p>
+						<button class="btn btn-primary">Contacto</button>
+					</div>
+					<div class="col-md-3">
+						<h5>recepcion</h5>
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p><span class="fas fa-phone-square-alt text-primary mr-2 icon--size-small"></span>+44 356 678 903</p>
+					</div>
+					<div class="col-md-3">
+						<h5>voluntarios</h5>
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p><span class="far fa-envelope text-primary mr-2 icon--size-small"></span>voluntario@mail.com</p>
+					</div>
+					<div class="col-md-3">
+						<a href="#"><span class="fab fa-instagram icon icon--size-big"></span></a>
+						<a href="#"><span class="fab fa-facebook-square icon icon--size-big"></span></a>
+						<a href="#"><span class="fab fa-tripadvisor icon icon--size-big"></span></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FIN - footer -->
 
-        <!-- jQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <!-- PoperJs -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <!-- BootstrapJs -->
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<!-- PoperJs -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<!-- BootstrapJs -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
 </html>

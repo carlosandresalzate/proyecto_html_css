@@ -6987,9 +6987,9 @@ a.text-dark:hover, a.text-dark:focus {
 /* seccion ospedaje
 Pagina hospedaje.html */
 /* ********************* */
-.vistaCompleta__img img {
+.vistaCompleta .vistaCompleta__img img {
   height: 600px;
-  width: 500px; }
+  width: 494px; }
 
 /* *********************** */
 /* Pagina actividades.html */
@@ -7057,8 +7057,7 @@ Pagina hospedaje.html */
     height: auto;
     padding: 1em; }
   .vistaCompleta__img img {
-    max-width: 100%;
-    height: 600px; }
+    display: inline-block; }
   .enConstruccion div p {
     font-size: 3em; }
   .enConstruccion img {
