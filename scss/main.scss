@@ -37,6 +37,9 @@ $secondary-font-family: 'Playfair Display';
 $font-family-sans-serif: $primary-font-family, sans-serif;
 $font-family-base: $primary-font-family;
 
+// table
+$border-collapse: collapse;
+
 %heading {
 	font-family: $secondary-font-family;
 }
@@ -48,6 +51,11 @@ $font-family-base: $primary-font-family;
 }
 // agregando bootstrap
 @import 'bootstrap.scss';
+
+// tablas
+table.border-collapse {
+	border-collapse: $border-collapse !important;
+}
 
 /* *********************** */
 /*        animacion        */
