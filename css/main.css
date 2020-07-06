@@ -6958,7 +6958,8 @@ table.border-collapse {
 
 .mainHeader__card_video {
   filter: brightness(70%);
-  animation: entrada ease-out 3s; }
+  animation: entrada ease-out 3s;
+  max-height: 800px; }
 
 @keyframes entrada {
   0% {

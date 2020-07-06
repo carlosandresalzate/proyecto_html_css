@@ -67,6 +67,7 @@ table.border-collapse {
 	&__card_video {
 		filter: brightness(70%);
 		@include animation(entrada ease-out 3s);
+		max-height: 800px;
 	}
 }
 
