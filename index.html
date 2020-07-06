@@ -95,8 +95,8 @@
 		<!-- FIN - Barra de navegacion -->
 		<!-- --- -->
 		<!-- INICIO - Header -->
-		<header class="mainHeader overflow-hidden bg-light">
-			<div class="position-relative container-fluid">
+		<header class="mainHeader overflow-hidden">
+			<div class="position-relative">
 				<div class="position-absolute jumbotron mainHeader__card bg-transparent mainHeader__card d-none d-sm-block">
 					<h1 class="text-light">Hostal En Las Montañas</h1>
 					<p class="lead text-light">
@@ -106,12 +106,18 @@
 						reserva
 					</button>
 				</div>
-				<div class="embed-responsive embed-responsive-16by9">
+				<!-- <div class="embed-responsive embed-responsive-16by9">
 					<iframe src="https://www.youtube-nocookie.com/embed/WBxQu_c-bDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item mainHeader__card_video">
 						<p>Su navegador no soporta iframes</p>
 					</iframe>
+				</div> -->
+				<div class="embed-responsive-item mainHeader__card_video">
+					<video preload="auto" poster="img/Video.png" controls autoplay loop muted class="embed-responsive embed-responsive-16by9">
+						<source src="video/mainvideo.mp4" type="video/mp4">
+						Tu  navegador no admite el elemento <code>video</code>
+					</video>
 				</div>
-			</div>
+				</div>
 			<!-- --- -->
 			<!-- inicio - formulario de reserva header -->
 			<div class="mainHeader__footer container-fluid d-flex justify-content-center bg-light">
