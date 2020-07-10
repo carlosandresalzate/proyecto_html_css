@@ -1,3 +1,14 @@
+$background-blanco: url(../img/whitegrit.png);
+$background-negro: url(../img/blackgrit.png);
+
+@mixin backgroundGrit($background) {
+	background-image: $background;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
 // font family agregada
 $primary-font-family: 'Lora';
 $secondary-font-family: 'Playfair Display';
@@ -19,15 +30,6 @@ $border-collapse: collapse;
 // agregando bootstrap
 @import 'bootstrap.scss';
 
-// tablas
-table {
-	border-collapse: separate;
-}
-
-table.border-collapse {
-	border-collapse: $border-collapse !important;
-}
-
 /* *********************** */
 /*        animacion        */
 /* *********************** */
@@ -40,11 +42,6 @@ table.border-collapse {
 	animation: #{$prop};
 }
 
-.logo {
-	transform: scale(1);
-	@include animation(tomb ease-in-out 3s infinite);
-}
-
 @include keyframes(tomb) {
 	50% {
 		transform: scale(1.03) translateY(3px);
@@ -52,22 +49,6 @@ table.border-collapse {
 
 	100% {
 		transform: scale(1) translateY(0);
-	}
-}
-
-.mainHeader {
-	&__card {
-		bottom: 0;
-		height: 320px;
-		margin: auto;
-		top: 0;
-		width: 100%;
-		z-index: 2;
-	}
-	&__card_video {
-		filter: brightness(70%);
-		@include animation(entrada ease-out 3s);
-		max-height: 800px;
 	}
 }
 
@@ -81,34 +62,106 @@ table.border-collapse {
 	}
 }
 
-.img-thumbnail {
-	filter: contrast(80%);
-	transition: filter 0.5s ease-in-out;
+.logo {
+	transform: scale(1);
+	@include animation(tomb ease-in-out 3s infinite);
+}
+// tablas
+table {
+	border-collapse: separate;
 }
 
-.img-thumbnail:hover {
-	filter: contrast(100%);
+table.border-collapse {
+	border-collapse: $border-collapse !important;
 }
 
-.seccionMuestra {
-	&__imgDos > img,
-	&__description {
-		height: 270px;
-		width: 494px;
-	}
-	&__imgUno > img,
+// fondo barra de naveegacion
+.bg-nav {
+	@include backgroundGrit($background-blanco);
+	z-index: -100;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+	background-size: cover;
+}
+
+// formulario bajo header
+// clase para generar glass
+.bajoHeader {
+	position: relative;
+	overflow: hidden;
+	background-image: url(../img/mainvideo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom;
+}
+.bajoHeader::before {
+	content: '';
+	background: inherit;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.05);
+	filter: blur(15px);
+	transform: scale(1.3);
+}
+
+// header
+.mainHeader {
+	overflow: hidden;
+	width: 100%;
+	max-height: 80vh;
 	&__card {
-		height: 340px;
-		width: 494px;
-	}
-}
-
-.mainUbicacion {
-	&__mapa {
+		bottom: 0;
+		height: 320px;
+		margin: auto;
+		top: 0;
 		width: 100%;
+		z-index: 2;
+	}
+	&__card_video {
+		filter: brightness(50%);
+		// @include animation(entrada ease-out 3s);
 	}
 }
 
+// mainHospedaje
+.mainHospedaje {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+	}
+}
+
+// serviciosMuestra
+.seccionMuestra {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-blanco);
+		background-size: cover;
+		z-index: 1000;
+	}
+}
+
+// mainPrecios
+.mainPrecios {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+		opacity: 0.5;
+	}
+}
+
+// mainFooter
+.mainFooter {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-blanco);
+		background-size: cover;
+	}
+}
 .icon {
 	transition: all 0.5s ease-in-out;
 }
@@ -142,6 +195,15 @@ Pagina hospedaje.html */
 /* *********************** */
 /* Pagina actividades.html */
 /* *********************** */
+.actividades {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+		opacity: 0.5;
+		z-index: -100;
+	}
+}
 .tabla {
 	&__table {
 		width: calc(100% / 250px);
