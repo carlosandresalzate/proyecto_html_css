@@ -49,9 +49,10 @@
 		<!-- --- -->
 		<!-- INICIO - Barra de navegacion -->
 		<nav class="navbar navbar-expand-md navbar-dark bg-gradient-dark sticky-top align-items-baseline">
+			<div class="bg-nav"></div>
 			<a href="index.html" class="navbar-brand">
 				<img width="50" height="50" src="img/logo_small.svg" alt="logo de la pagina" loading="lazy" class="d-inline-block align-bottom logo" />
-				Hostal La Casa
+				<span>Hostal La Casa</span>
 			</a>
 			<button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarContenido" aria-expanded="false" aria-label="toggle navigation">
 				<span class="navbar-toggler-icon justify-content-end"></span>
@@ -90,149 +91,42 @@
 		<!-- FIN - Barra de navegacion -->
 		<!-- --- -->
 		<!-- INICIO section -->
-		<section>
-			<div class="container">
-				<!-- agregar un nombre a esta clase -->
-				<article class="sinNombreAun py-3">
-					<h1>Lorem ipsum dolor sit.</h1>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere tenetur sequi possimus officia eligendi voluptates quod? Perspiciatis quas dolorem maiores dignissimos, non eius deserunt aspernatur suscipit tempora ipsam eum nihil ut quos eaque tempore ipsa. Id odit, quaerat sed
-						exercitationem voluptatem nam natus in obcaecati modi explicabo ea deserunt!
-					</p>
-				</article>
+		<section class="actividades position-relative">
+			<div>
+				<div class="container">
+					<!-- agregar un nombre a esta clase -->
+					<article class="sinNombreAun py-3">
+						<h1>Lorem ipsum dolor sit.</h1>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere tenetur sequi possimus officia eligendi voluptates quod? Perspiciatis quas dolorem maiores dignissimos, non eius deserunt aspernatur suscipit tempora ipsam eum nihil ut quos eaque tempore ipsa. Id odit, quaerat sed
+							exercitationem voluptatem nam natus in obcaecati modi explicabo ea deserunt!
+						</p>
+					</article>
+				</div>
 			</div>
-		</section>
-		<section class="actividades overflow-hidden">
-			<div class="container pb-4">
-				<table class="table table-bordered border-collapse d-none d-lg-table horizontal">
-					<thead>
-						<tr>
-							<th scope="col">Sitio</th>
-							<th scope="col">Descripcion</th>
-							<th scope="col">Actiidades</th>
-							<th scope="col">Precio</th>
-						</tr>
-					</thead>
-					<tbody class="actividades__table_tbody">
-						<tr>
-							<td class="text-center">
-								<img src="img/Rectángulo_color.png" alt="" class="img-tumbnail" />
-							</td>
-							<td>
-								<h4>titulo</h4>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
-								</p>
-							</td>
-							<td>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-							</td>
-							<td class="text-center">
-								<p><span class="fas fa-dollar-sign"></span>19.99</p>
-								<button class="btn btn-primary">Contratar</button>
-							</td>
-						</tr>
-						<!-- --- -->
-						<tr>
-							<td class="text-center">
-								<img src="img/Rectángulo_color.png" alt="" class="img-tumbnail" />
-							</td>
-							<td>
-								<h4>titulo</h4>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
-								</p>
-							</td>
-							<td>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-							</td>
-							<td class="text-center">
-								<p><span class="fas fa-dollar-sign"></span>19.99</p>
-								<button class="btn btn-primary">Contratar</button>
-							</td>
-						</tr>
-						<!-- --- -->
-						<tr>
-							<td class="text-center">
-								<img src="img/Rectángulo_color.png" alt="" class="img-tumbnail" />
-							</td>
-							<td>
-								<h4>titulo</h4>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
-								</p>
-							</td>
-							<td>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-								<p>
-									<span>Lorem, ipsum.</span>
-									<span class="fas fa-check text-primary"></span>
-								</p>
-							</td>
-							<td class="text-center">
-								<p><span class="fas fa-dollar-sign"></span>19.99</p>
-								<button class="btn btn-primary">Contratar</button>
-							</td>
-						</tr>
-					</tbody>
-					<tfoot class="text-center">
-						<tr>
-							<td colspan="4">
-								<p><span class="fas fa-info-circle"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maiores.</p>
-							</td>
-						</tr>
-					</tfoot>
-				</table>
-				<div class="row align-items-center justify-content-center d-lg-none">
-					<table class="tabla__table col-md-3 table table-borderless border">
-						<thead class="tabla__thead">
+			<div class="overflow-hidden">
+				<div class="container pb-4">
+					<table class="table table-bordered border-collapse d-none d-lg-table horizontal">
+						<thead>
 							<tr>
-								<th colspan="2" scope="col" class="text-center">
-									<img src="img/Rectángulo_color.png" alt="" class="rounded" />
-									<p class="position-absolute">sitio</p>
-								</th>
+								<th scope="col">Sitio</th>
+								<th scope="col">Descripcion</th>
+								<th scope="col">Actiidades</th>
+								<th scope="col">Precio</th>
 							</tr>
 						</thead>
-						<tbody class="tabla__tbody text-center">
+						<tbody class="actividades__table_tbody">
 							<tr>
+								<td class="text-center">
+									<img src="img/Rectángulo_color.png" alt="" class="img-tumbnail" />
+								</td>
 								<td>
-									<h4 class="pt-3">titulo</h4>
-									<p class="border-bottom pb-3">
+									<h4>titulo</h4>
+									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
 									</p>
 								</td>
-							</tr>
-							<tr>
-								<td class="border-bottom">
+								<td>
 									<p>
 										<span>Lorem, ipsum.</span>
 										<span class="fas fa-check text-primary"></span>
@@ -246,35 +140,23 @@
 										<span class="fas fa-check text-primary"></span>
 									</p>
 								</td>
-							</tr>
-							<tr>
-								<td>
+								<td class="text-center">
 									<p><span class="fas fa-dollar-sign"></span>19.99</p>
-									<button class="btn btn-primary">Contratar</button>
+									<button class="btn btn-outline-primary">Contratar</button>
 								</td>
 							</tr>
-						</tbody>
-					</table>
-					<table class="tabla__table col-md-3 table table-borderless border">
-						<thead class="tabla__thead">
+							<!-- --- -->
 							<tr>
-								<th colspan="2" scope="col" class="text-center">
-									<img src="img/Rectángulo_color.png" alt="" class="rounded" />
-									<p class="position-absolute">sitio</p>
-								</th>
-							</tr>
-						</thead>
-						<tbody class="tabla__tbody text-center">
-							<tr>
+								<td class="text-center">
+									<img src="img/Rectángulo_color.png" alt="" class="img-tumbnail" />
+								</td>
 								<td>
-									<h4 class="pt-3">titulo</h4>
-									<p class="border-bottom pb-3">
+									<h4>titulo</h4>
+									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
 									</p>
 								</td>
-							</tr>
-							<tr>
-								<td class="border-bottom">
+								<td>
 									<p>
 										<span>Lorem, ipsum.</span>
 										<span class="fas fa-check text-primary"></span>
@@ -288,35 +170,23 @@
 										<span class="fas fa-check text-primary"></span>
 									</p>
 								</td>
-							</tr>
-							<tr>
-								<td>
+								<td class="text-center">
 									<p><span class="fas fa-dollar-sign"></span>19.99</p>
-									<button class="btn btn-primary">Contratar</button>
+									<button class="btn btn-outline-primary">Contratar</button>
 								</td>
 							</tr>
-						</tbody>
-					</table>
-					<table class="tabla__table col-md-3 table table-borderless border">
-						<thead class="tabla__thead">
+							<!-- --- -->
 							<tr>
-								<th colspan="2" scope="col" class="text-center">
-									<img src="img/Rectángulo_color.png" alt="" class="rounded" />
-									<p class="position-absolute">sitio</p>
-								</th>
-							</tr>
-						</thead>
-						<tbody class="tabla__tbody text-center">
-							<tr>
+								<td class="text-center">
+									<img src="img/Rectángulo_color.png" alt="" class="img-tumbnail" />
+								</td>
 								<td>
-									<h4 class="pt-3">titulo</h4>
-									<p class="border-bottom pb-3">
+									<h4>titulo</h4>
+									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
 									</p>
 								</td>
-							</tr>
-							<tr>
-								<td class="border-bottom">
+								<td>
 									<p>
 										<span>Lorem, ipsum.</span>
 										<span class="fas fa-check text-primary"></span>
@@ -330,17 +200,150 @@
 										<span class="fas fa-check text-primary"></span>
 									</p>
 								</td>
-							</tr>
-							<tr>
-								<td>
+								<td class="text-center">
 									<p><span class="fas fa-dollar-sign"></span>19.99</p>
-									<button class="btn btn-primary">Contratar</button>
+									<button class="btn btn-outline-primary">Contratar</button>
 								</td>
 							</tr>
 						</tbody>
+						<tfoot class="text-center">
+							<tr>
+								<td colspan="4">
+									<p><span class="fas fa-info-circle"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maiores.</p>
+								</td>
+							</tr>
+						</tfoot>
 					</table>
-					<div class="col-md-12 text-center">
-						<p><span class="fas fa-info-circle"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maiores.</p>
+					<div class="row align-items-center justify-content-center d-lg-none">
+						<table class="tabla__table col-md-3 table table-borderless border">
+							<thead class="tabla__thead">
+								<tr>
+									<th colspan="2" scope="col" class="text-center">
+										<img src="img/Rectángulo_color.png" alt="" class="rounded" />
+										<p class="position-absolute">sitio</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="tabla__tbody text-center">
+								<tr>
+									<td>
+										<h4 class="pt-3">titulo</h4>
+										<p class="border-bottom pb-3">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-bottom">
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p><span class="fas fa-dollar-sign"></span>19.99</p>
+										<button class="btn btn-outline-primary">Contratar</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="tabla__table col-md-3 table table-borderless border">
+							<thead class="tabla__thead">
+								<tr>
+									<th colspan="2" scope="col" class="text-center">
+										<img src="img/Rectángulo_color.png" alt="" class="rounded" />
+										<p class="position-absolute">sitio</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="tabla__tbody text-center">
+								<tr>
+									<td>
+										<h4 class="pt-3">titulo</h4>
+										<p class="border-bottom pb-3">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-bottom">
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p><span class="fas fa-dollar-sign"></span>19.99</p>
+										<button class="btn btn-outline-primary">Contratar</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="tabla__table col-md-3 table table-borderless border">
+							<thead class="tabla__thead">
+								<tr>
+									<th colspan="2" scope="col" class="text-center">
+										<img src="img/Rectángulo_color.png" alt="" class="rounded" />
+										<p class="position-absolute">sitio</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="tabla__tbody text-center">
+								<tr>
+									<td>
+										<h4 class="pt-3">titulo</h4>
+										<p class="border-bottom pb-3">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="border-bottom">
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+										<p>
+											<span>Lorem, ipsum.</span>
+											<span class="fas fa-check text-primary"></span>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p><span class="fas fa-dollar-sign"></span>19.99</p>
+										<button class="btn btn-outline-primary">Contratar</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="col-md-12 text-center">
+							<p><span class="fas fa-info-circle"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maiores.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -348,13 +351,13 @@
 		<!-- FIN section -->
 		<!-- --- -->
 		<!-- INICIO - footer -->
-		<footer id="mainFooter" class="mainFooter bg-light">
-			<div class="container py-5">
+		<footer id="mainFooter" class="mainFooter bg-dark position-relative">
+			<div class="container py-5 text-light">
 				<div class="row align-items-start">
 					<div class="col-md-3">
 						<h5>Preguntas</h5>
 						<p>Lorem ipsum dolor sit amet.</p>
-						<button class="btn btn-primary">Contacto</button>
+						<a href="contacto.html" class="btn btn-outline-primary" role="button" aria-pressed="true">Contacto</a>
 					</div>
 					<div class="col-md-3">
 						<h5>recepcion</h5>
@@ -367,9 +370,9 @@
 						<p><span class="far fa-envelope text-primary mr-2 icon--size-small"></span>voluntario@mail.com</p>
 					</div>
 					<div class="col-md-3">
-						<a href="#"><span class="fab fa-instagram icon icon--size-big"></span></a>
-						<a href="#"><span class="fab fa-facebook-square icon icon--size-big"></span></a>
-						<a href="#"><span class="fab fa-tripadvisor icon icon--size-big"></span></a>
+						<a href="#"><span class="fab fa-instagram icon icon--size-big px-3"></span></a>
+						<a href="#"><span class="fab fa-facebook-square icon icon--size-big px-3"></span></a>
+						<a href="#"><span class="fab fa-tripadvisor icon icon--size-big px-3"></span></a>
 					</div>
 				</div>
 			</div>
