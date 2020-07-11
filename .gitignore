@@ -181,6 +181,11 @@ GitHub.sublime-settings
 # Ignore all local history of files
 .history
 
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,sublimetext,git,sass,prepros
 
 # mis lineas
