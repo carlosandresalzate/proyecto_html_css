@@ -181,15 +181,15 @@ $icon-sizes: (
 }
 
 /* ********************* */
-/* seccion ospedaje
+/* seccion hospedaje
 Pagina hospedaje.html */
 /* ********************* */
-.vistaCompleta {
-	.vistaCompleta__img {
-		img {
-			height: 600px;
-			width: 494px;
-		}
+.headerHospedaje {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+		opacity: 0.5;
 	}
 }
 /* *********************** */
