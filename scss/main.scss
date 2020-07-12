@@ -251,6 +251,19 @@ Pagina hospedaje.html */
 }
 
 /* *********************** */
+/*  Pagina contacto.html   */
+/* *********************** */
+.mainForm {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+		opacity: 0.5;
+		z-index: -100;
+	}
+}
+
+/* *********************** */
 /*         queries         */
 /* *********************** */
 
