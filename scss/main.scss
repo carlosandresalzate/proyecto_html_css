@@ -190,6 +190,7 @@ Pagina hospedaje.html */
 		@include backgroundGrit($background-negro);
 		background-size: cover;
 		opacity: 0.5;
+		z-index: -100;
 	}
 }
 /* *********************** */
