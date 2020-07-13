@@ -1172,3 +1172,7 @@ $user-selects: all, auto, none !default;
 
 $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, 'lg') !default;
+
+// Imagenes para el background
+$background-blanco: url(../img/whitegrit.png);
+$background-negro: url(../img/blackgrit.png);
