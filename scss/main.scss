@@ -1,6 +1,3 @@
-$background-blanco: url(../img/whitegrit.png);
-$background-negro: url(../img/blackgrit.png);
-
 @mixin backgroundGrit($background) {
 	background-image: $background;
 	background-repeat: no-repeat;
