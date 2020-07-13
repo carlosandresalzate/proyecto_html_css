@@ -9,14 +9,12 @@ $background-negro: url(../img/blackgrit.png);
 	width: 100%;
 	height: 100%;
 }
-// font family agregada
-$primary-font-family: 'Lora';
-$secondary-font-family: 'Playfair Display';
-$font-family-sans-serif: $primary-font-family, sans-serif;
-$font-family-base: $primary-font-family;
 
 // table
 $border-collapse: collapse;
+
+// agregando bootstrap
+@import 'bootstrap.scss';
 
 %heading {
 	font-family: $secondary-font-family;
@@ -27,12 +25,11 @@ $border-collapse: collapse;
 		@extend %heading;
 	}
 }
-// agregando bootstrap
-@import 'bootstrap.scss';
 
 /* *********************** */
 /*        animacion        */
 /* *********************** */
+
 @mixin keyframes($name) {
 	@keyframes #{$name} {
 		@content;
