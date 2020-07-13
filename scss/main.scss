@@ -14,15 +14,6 @@
 /*        animacion        */
 /* *********************** */
 
-@mixin keyframes($name) {
-	@keyframes #{$name} {
-		@content;
-	}
-}
-@mixin animation($prop) {
-	animation: #{$prop};
-}
-
 @include keyframes(tomb) {
 	50% {
 		transform: scale(1.03) translateY(3px);
