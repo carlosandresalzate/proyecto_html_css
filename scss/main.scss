@@ -50,14 +50,6 @@ $background-negro: url(../img/blackgrit.png);
 	transform: scale(1);
 	@include animation(tomb ease-in-out 3s infinite);
 }
-// tablas
-table {
-	border-collapse: separate;
-}
-
-table.border-collapse {
-	border-collapse: $border-collapse !important;
-}
 
 // fondo barra de naveegacion
 .bg-nav {
