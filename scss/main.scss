@@ -10,21 +10,8 @@ $background-negro: url(../img/blackgrit.png);
 	height: 100%;
 }
 
-// table
-$border-collapse: collapse;
-
 // agregando bootstrap
 @import 'bootstrap.scss';
-
-%heading {
-	font-family: $secondary-font-family;
-}
-
-@for $i from 1 through 6 {
-	h#{$i} {
-		@extend %heading;
-	}
-}
 
 /* *********************** */
 /*        animacion        */
