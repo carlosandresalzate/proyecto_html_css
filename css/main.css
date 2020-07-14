@@ -7170,6 +7170,20 @@ a.text-dark:hover, a.text-dark:focus {
   transform: scale(1);
   animation: tomb ease-in-out 3s infinite; }
 
+.mainHeader {
+  overflow: hidden;
+  width: 100%;
+  max-height: 80vh; }
+  .mainHeader__card {
+    bottom: 0;
+    height: 320px;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    z-index: 1000; }
+  .mainHeader__card_video {
+    filter: brightness(50%); }
+
 .bajoHeader {
   position: relative;
   overflow: hidden;

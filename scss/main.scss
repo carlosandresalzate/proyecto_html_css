@@ -30,6 +30,26 @@
 	@include animation(tomb ease-in-out 3s infinite);
 }
 
+// card header
+// header
+.mainHeader {
+	overflow: hidden;
+	width: 100%;
+	max-height: 80vh;
+	&__card {
+		bottom: 0;
+		height: 320px;
+		margin: auto;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+	&__card_video {
+		filter: brightness(50%);
+		// @include animation(entrada ease-out 3s);
+	}
+}
+
 // formulario bajo header
 // clase para generar glass
 .bajoHeader {
