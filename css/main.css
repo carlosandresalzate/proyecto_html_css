@@ -7204,6 +7204,6 @@ a.text-dark:hover, a.text-dark:focus {
 /* Pagina actividades.html */
 /* *********************** */
 .tabla__table {
-  width: calc(100% / 250px);
   min-width: 250px;
-  max-width: 250px; }
+  max-width: 250px;
+  margin: 1rem; }
