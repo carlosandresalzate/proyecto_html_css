@@ -1,0 +1,8 @@
+@mixin keyframes($name) {
+	@keyframes #{$name} {
+		@content;
+	}
+}
+@mixin animation($prop) {
+	animation: #{$prop};
+}

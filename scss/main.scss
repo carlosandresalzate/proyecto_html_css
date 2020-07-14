@@ -1,46 +1,9 @@
-$background-blanco: url(../img/whitegrit.png);
-$background-negro: url(../img/blackgrit.png);
-
-@mixin backgroundGrit($background) {
-	background-image: $background;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-// font family agregada
-$primary-font-family: 'Lora';
-$secondary-font-family: 'Playfair Display';
-$font-family-sans-serif: $primary-font-family, sans-serif;
-$font-family-base: $primary-font-family;
-
-// table
-$border-collapse: collapse;
-
-%heading {
-	font-family: $secondary-font-family;
-}
-
-@for $i from 1 through 6 {
-	h#{$i} {
-		@extend %heading;
-	}
-}
 // agregando bootstrap
 @import 'bootstrap.scss';
 
 /* *********************** */
 /*        animacion        */
 /* *********************** */
-@mixin keyframes($name) {
-	@keyframes #{$name} {
-		@content;
-	}
-}
-@mixin animation($prop) {
-	animation: #{$prop};
-}
 
 @include keyframes(tomb) {
 	50% {
@@ -66,24 +29,6 @@ $border-collapse: collapse;
 	transform: scale(1);
 	@include animation(tomb ease-in-out 3s infinite);
 }
-// tablas
-table {
-	border-collapse: separate;
-}
-
-table.border-collapse {
-	border-collapse: $border-collapse !important;
-}
-
-// fondo barra de naveegacion
-.bg-nav {
-	@include backgroundGrit($background-blanco);
-	z-index: -100;
-	left: 0;
-	top: 0;
-	opacity: 0.3;
-	background-size: cover;
-}
 
 // formulario bajo header
 // clase para generar glass
@@ -95,6 +40,7 @@ table.border-collapse {
 	background-size: cover;
 	background-position: bottom;
 }
+
 .bajoHeader::before {
 	content: '';
 	background: inherit;
@@ -106,62 +52,6 @@ table.border-collapse {
 	transform: scale(1.3);
 }
 
-// header
-.mainHeader {
-	overflow: hidden;
-	width: 100%;
-	max-height: 80vh;
-	&__card {
-		bottom: 0;
-		height: 320px;
-		margin: auto;
-		top: 0;
-		width: 100%;
-		z-index: 2;
-	}
-	&__card_video {
-		filter: brightness(50%);
-		// @include animation(entrada ease-out 3s);
-	}
-}
-
-// mainHospedaje
-.mainHospedaje {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-negro);
-		background-size: cover;
-	}
-}
-
-// serviciosMuestra
-.seccionMuestra {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-blanco);
-		background-size: cover;
-		z-index: 1000;
-	}
-}
-
-// mainPrecios
-.mainPrecios {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-negro);
-		background-size: cover;
-		opacity: 0.5;
-	}
-}
-
-// mainFooter
-.mainFooter {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-blanco);
-		background-size: cover;
-	}
-}
 .icon {
 	transition: all 0.5s ease-in-out;
 }
@@ -180,164 +70,15 @@ $icon-sizes: (
 	}
 }
 
-/* ********************* */
-/* seccion hospedaje
-Pagina hospedaje.html */
-/* ********************* */
-.headerHospedaje {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-negro);
-		background-size: cover;
-		opacity: 0.5;
-		z-index: -100;
-	}
-}
 /* *********************** */
 /* Pagina actividades.html */
 /* *********************** */
-.actividades {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-negro);
-		background-size: cover;
-		opacity: 0.5;
-		z-index: -100;
-	}
-}
+
 .tabla {
 	&__table {
 		width: calc(100% / 250px);
 		min-width: 250px;
 		max-width: 250px;
-		margin: 16px;
-	}
-}
-
-/* *********************** */
-/* Pagina voluntarios.html */
-/* *********************** */
-
-.enConstruccion {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 600px;
-	min-height: 300px;
-
-	div {
-		height: 267px;
-		position: relative;
-		top: 0px;
-		width: 400px;
-		p {
-			font-size: 8em;
-			position: absolute;
-			z-index: 3;
-			margin: 0;
-			color: rgba(32, 35, 41, 0.9);
-			font-weight: bold;
-		}
-	}
-	img {
-		box-shadow: 2px 3px 10px -2px #202329;
-		height: 267px;
-		opacity: 0.7;
-		transform-origin: top left;
-		transform: rotate(10deg);
-		width: 400px;
-	}
-}
-
-/* *********************** */
-/*  Pagina contacto.html   */
-/* *********************** */
-.mainForm {
-	&::before {
-		content: '';
-		@include backgroundGrit($background-negro);
-		background-size: cover;
-		opacity: 0.5;
-		z-index: -100;
-	}
-}
-
-/* *********************** */
-/*         queries         */
-/* *********************** */
-
-@mixin media_w_h($mWidth, $height) {
-	// max-width: 100%;
-	// height: auto;
-	max-width: $mWidth;
-	height: $height;
-}
-
-// @media (max-width: 991.98px)
-@include media-breakpoint-down(lg) {
-	.seccionMuestra {
-		&__top {
-			margin-bottom: 16px;
-		}
-	}
-
-	.enConstruccion {
-		div {
-			p {
-				font-size: 6em;
-			}
-		}
-	}
-}
-// @media (max-width: 767.98px)
-@include media-breakpoint-down(md) {
-	.enConstruccion {
-		div {
-			p {
-				font-size: 4em;
-			}
-		}
-	}
-}
-// @media (max-width: 575.98)
-@include media-breakpoint-down(sm) {
-	.seccionMuestra {
-		&__description,
-		&__imgDos > img,
-		&__imgUno > img,
-		&__card {
-			@include media_w_h(100%, auto);
-		}
-		&__description {
-			padding: 1em;
-		}
-	}
-	.mainHospedaje {
-		&__description {
-			@include media_w_h(100%, auto);
-			padding: 1em;
-		}
-	}
-	// .vistaCompleta {
-	//     &__img {
-	//         img {
-	//             @include media_w_h(100%, 600px);
-	//             display: inline-block;
-	//         }
-	//     }
-	// }
-
-	.enConstruccion {
-		div {
-			p {
-				font-size: 3em;
-			}
-		}
-		img {
-			height: auto;
-			width: 100%;
-		}
+		// margin: 16px;
 	}
 }

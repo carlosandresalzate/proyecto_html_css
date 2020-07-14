@@ -1,0 +1,31 @@
+// clase reutilizable para los fondos con arena
+.bg-dark-img {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+		opacity: 0.5;
+	}
+	&-atras::before {
+		content: '';
+		@include backgroundGrit($background-negro);
+		background-size: cover;
+		opacity: 0.5;
+		z-index: -100;
+	}
+}
+.bg-light-img {
+	&::before {
+		content: '';
+		@include backgroundGrit($background-blanco);
+		background-size: cover;
+		opacity: 0.5;
+	}
+	&-nav {
+		@include backgroundGrit($background-blanco);
+		z-index: -100;
+		left: 0;
+		top: 0;
+		opacity: 0.3;
+	}
+}
